@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    {% if message != NULL %}
+    
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <span type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+      {{message}}
+    </div>
+    
+    {% endif %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Mega Mart Sales Prediction Project</title>
+  </head>
+  <body>
+    <h1>Welcome to the about page of our Mega Mart Sales Prediction Project!</h1>
+    <p>Our project is aimed at helping store managers to make data-driven decisions by predicting future sales based on historical sales data. The Mega Mart dataset contains sales data of 1559 products across 10 outlets from the year 1985 to 2009.</p>
+    <p>We used various machine learning algorithms, including linear regression, decision trees, random forests, XGboost, LightGBM and so on to train our model and select the best-performing algorithm.</p>
+    <p>We also incorporated feature engineering techniques to extract meaningful insights from the dataset, including identifying key product and outlet attributes that influence sales <i>(Please Refer to the <a href = "/analysis">analysis</a> page)</i>. Our final model achieved an impressive <b>RSME OF <i>1068.796699</i></b>, which makes it a reliable tool for sales prediction.</p>
+    <p>We are confident that our Mega Mart Sales Prediction Project will be a valuable asset to store managers, helping them optimize their inventory management, pricing strategies, and overall sales performance.</p>
+  </body>
+</html>
+
+{% endblock %}
